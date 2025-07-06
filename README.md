@@ -160,6 +160,7 @@ Devices will appear as: `Kitchen_abc123`, `Bedroom_def456`, etc.
 The system uses the following MQTT topic structure:
 
 ### Device Control
+
 - `home/leds/all/power` - Control all devices (on/off)
 - `home/leds/all/mode` - Set mode for all devices (0-4)
 - `home/leds/{device_id}/power` - Control specific device
@@ -233,6 +234,17 @@ const int mqtt_port = 1883;
 2. Check if controller is connected to WiFi
 3. Try accessing from different device/browser
 4. Restart controller if needed
+
+## Interface Screenshots
+![Screenshot 2025-07-05 225459](https://github.com/user-attachments/assets/e4b0c883-b1e2-4f08-a695-32d149ee6d9a)
+![Screenshot 2025-07-05 225414](https://github.com/user-attachments/assets/340f2f98-ea9f-496b-8008-c76be5bfdfb6)
+
+## LED Matrix Screenshot
+![PXL_20250706_025127542~2](https://github.com/user-attachments/assets/205b75a7-d098-45b6-8892-4a2508cd08d6)
+
+## UNO R4 Serial Output Screenshot
+![image](https://github.com/user-attachments/assets/25c4670a-4855-4940-8d67-ef7133f6e4c0)
+
 
 ## 📄 License
 
