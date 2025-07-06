@@ -19,26 +19,26 @@ A wireless LED control system using Arduino UNO R4 WiFi as a central controller 
 
 ```
 ┌─────────────────┐    MQTT     ┌─────────────────┐
-│  UNO R4 WiFi    │◄──────────► │  MQTT Broker    │
-│  (Controller)   │             │  (HiveMQ)       │
-│  Web Interface  │             └─────────────────┘
+│  UNO R4 WiFi       │◄───────►  │  MQTT Broker       │
+│  (Controller)      │             │  (HiveMQ)          │
+│  Web Interface     │             └─────────────────┘
 └─────────────────┘                      ▲
-         ▲                               │
-         │ WiFi Network                  │ MQTT
-         ▼                               ▼
+         ▲                                  │
+         │ WiFi Network                     │ MQTT
+         ▼                                  ▼
 ┌─────────────────┐             ┌─────────────────┐
-│   Your Device   │             │   ESP8266 #1    │
-│  (Web Browser)  │             │   LED Device    │
+│   Your Device      │             │   ESP8266 #1       │
+│  (Web Browser)     │             │   LED Device       │
 └─────────────────┘             └─────────────────┘
                                          │
                                    ┌─────────────────┐
-                                   │   ESP8266 #2    │
-                                   │   LED Device    │
+                                   │   ESP8266 #2       │
+                                   │   LED Device       │
                                    └─────────────────┘
                                          │
                                    ┌─────────────────┐
-                                   │   ESP8266 #N    │
-                                   │   LED Device    │
+                                   │   ESP8266 #N       │
+                                   │   LED Device       │
                                    └─────────────────┘
 ```
 
